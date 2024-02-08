@@ -1,0 +1,93 @@
+
+// Price Action Gold MT4
+// Developer: Forex Robot Easy Team
+// Website: forexroboteasy.com
+
+// Include necessary libraries
+#include <Trade\Trade.mqh>
+
+// Define constants
+#define GOLD_SYMBOL 'XAUUSD'
+#define STOP_LOSS 100
+#define TAKE_PROFIT 200
+
+// Define global variables
+CTrade trade;
+
+// Function to analyze fundamental forex indicators
+void analyzeIndicators()
+{
+    // TODO: Add code to analyze the 10 fundamental forex indicators
+}
+
+// Function to open orders using classic trade approach
+void openOrders()
+{
+    // TODO: Add code to open orders based on the analysis of indicators
+
+    // Open buy order
+    trade.Buy(GOLD_SYMBOL, 1, 0, 0, STOP_LOSS, TAKE_PROFIT);
+
+    // Open sell order
+    trade.Sell(GOLD_SYMBOL, 1, 0, 0, STOP_LOSS, TAKE_PROFIT);
+}
+
+// Function to set stop loss and take profit levels for each order
+void setSLTP()
+{
+    // TODO: Add code to set stop loss and take profit levels for each order
+}
+
+// Function to optimize code for efficient and fast execution
+void optimizeCode()
+{
+    // TODO: Add code to optimize code for efficient and fast execution
+}
+
+// Function to test code for functionality and reliability
+void testCode()
+{
+    // TODO: Add code to test code for functionality and reliability
+}
+
+// Entry point of the program
+int OnInit()
+{
+    // Initialize trade module
+    trade = new CTrade;
+
+    // Set trade module parameters
+    trade.SetExpertMagicNumber(123456);
+
+    return(INIT_SUCCEEDED);
+}
+
+// Start of the program
+void OnTick()
+{
+    // Analyze forex indicators
+    analyzeIndicators();
+
+    // Open orders
+    openOrders();
+
+    // Set stop loss and take profit levels
+    setSLTP();
+
+    // Optimize code
+    optimizeCode();
+
+    // Test code
+    testCode();
+
+    // TODO: Add code for logical conclusion of the program
+
+    // Deinitialize trade module
+    delete trade;
+}
+
+// End of the program
+void OnDeinit(const int reason)
+{
+    // TODO: Add code for program deinitialization
+}
